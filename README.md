@@ -1,6 +1,8 @@
 # puk_nlp
 nlp analysis of anthony bourdain's parts unknown
 
+look at parts_unknown_initial_exploration.ipynb for main analysis
+
 Project Overview:
 
 I’m doing an analysis of the transcripts of the TV show Parts Unknown. This is an unsupervised classification task, and I hope to perform some clustering to identify similar episodes and/or locations. The broad analyses I will do here are: 
