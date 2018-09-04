@@ -1,0 +1,5 @@
+.ipynb_checkpoints
+.DS_Store
+.gitattributes
+doc_cluster.pkl
+puk_formatting_subtitles-Copy1.ipynb
