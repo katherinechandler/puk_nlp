@@ -1,21 +1,11 @@
-# puk_nlp
+# Themes in Anthony Bourdain's *Parts Unknown*
 
-Project Overview:
+Like many travelers I was saddened by the death of travel personality Anthony Bourdain. I'll miss his always interesting and wonderfully humanistic viewpoint terribly, and in this project I applied NLP and clustering tools to identify overarching themes in his CNN series *Parts Unknown*. 
 
-1) still working on my NLP clustering project
+Using non-negative matrix factorization (NMF) to model themes in the episode transcripts, I identified themes of war/conflict, food (no surprise there), a love of Asia (and Asian food), music/art/literature, and drugs/substance abuse. I also mapped how these themes are represented across the locations Bourdain visited.
 
-2) created a more robust list of stop words to make analysis cleaner
-	- identified words used more than 10 X per episode (average) and added to stop words list
+This repo contains the raw and processed transcript data for this analysis in the `raw_data` and `processed_text` directory, respectively. The full transcript data set (along with episode meta data) is combined in the `puk_all_episodes.csv` file int he `processed_text` directory.
 
-3) also made a secondary stop words list that included location names and nationalities
-	- I noticed that lots of the topics identified just contained place names, so I wanted to see if I 
-	could identify more general topics by removing place names and references to specific nationalities
-	- I still get similar topics but the key words are interesting
+The `parts_unknown_nlp_topic_clustering.ipynb` notebook is the main walkthrough for this analysis, and additional graphs and exploration can be found in `parts_unknown_nlp_full.ipynb`. 
 
-4) did a cosine similarity followed by heat mat to identify locations most similar to a given location
-
-5) k-means elbow test is not converging; I’ve read that this doesn’t necessarily mean there aren’t clusters, but perhaps K-means is not a good model for this data
-	- discuss reasons why
-
-5) considering doing network analysis rather than clustering to visualize relationships
-	- any insight on this?
+I also wrote a high-level blog about this analysis on my [website](https://katherinechandler.io/post/bourdain_nlp_clustering/). Enjoy!
